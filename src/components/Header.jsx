@@ -2,7 +2,7 @@ export const Header = () => {
   return (
     <div>
       <div>
-        <h2>Fake Shop</h2>
+        <h1>Fake Shop</h1>
       </div>
     </div>
   );
