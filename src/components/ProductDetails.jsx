@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import axios from "axios";
 import { useParams } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
-import { selectProduct } from "../redux/actions/Action";
+import { selectProduct, removeSelectedProduct } from "../redux/actions/Action";
 
 export const ProductDetails = () => {
   const product = useSelector((state) => state.product);
@@ -21,6 +21,10 @@ export const ProductDetails = () => {
   useEffect(() => {
     if (productId && productId !== "") {
       fetchProductDetail();
+
+      return () => {
+        dispatch(removeSelectedProduct());
+      };
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [productId]);
