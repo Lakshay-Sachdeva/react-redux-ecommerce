@@ -1,9 +1,15 @@
+import styled from "styled-components";
+
 export const Header = () => {
-  return (
-    <div>
-      <div>
-        <h1>Fake Shop</h1>
-      </div>
-    </div>
-  );
+  return <Heading>Clone of E-Commerce</Heading>;
 };
+
+const Heading = styled.h1`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px auto;
+  font-size: 42px;
+  line-height: 28px;
+  color: rgb(7, 34, 39)
+`;
