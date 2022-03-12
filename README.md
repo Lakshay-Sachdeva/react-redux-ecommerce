@@ -1,6 +1,19 @@
-# Getting Started with Create React App
+# Dummy E - Commerce Store
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was made for learning purpose with the help of [Fake Api Store](https://fakestoreapi.com/) for the products data.
+
+---
+
+## Tech Stack Used
+
+- ReactJS
+- React Router DOM
+- Redux
+- Redux Thunk
+- Axios
+- Styled Components
+
+---
 
 ## Available Scripts
 
